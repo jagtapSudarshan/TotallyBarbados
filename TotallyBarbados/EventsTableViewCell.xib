@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventsTableViewCellIdentifier" rowHeight="253" id="KGk-i7-Jjw" customClass="EventsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="603" height="243"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="603" height="242.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPc-Fb-XDq">
+                        <rect key="frame" x="8" y="192" width="584" height="42.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42.5" id="9vF-GN-iZ5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKe-7b-79q">
+                        <rect key="frame" x="8" y="138" width="584" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="kEQ-3K-7xp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                        <color key="textColor" red="0.14441064410000001" green="0.42176797939999999" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E7q-iV-8pj" customClass="AsyncImageView">
+                        <rect key="frame" x="210" y="10" width="180" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="Etu-mw-Lhj"/>
+                            <constraint firstAttribute="width" constant="180" id="Q2r-N8-Ahn"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nPc-Fb-XDq" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-3" id="0nC-ho-aQe"/>
+                    <constraint firstItem="nPc-Fb-XDq" firstAttribute="top" secondItem="eKe-7b-79q" secondAttribute="bottom" constant="8" id="4b0-LA-9TG"/>
+                    <constraint firstItem="eKe-7b-79q" firstAttribute="top" secondItem="E7q-iV-8pj" secondAttribute="bottom" constant="8" id="8mV-rM-wkm"/>
+                    <constraint firstItem="nPc-Fb-XDq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="CkL-kl-Qbp"/>
+                    <constraint firstItem="nPc-Fb-XDq" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-1.5" id="cRJ-43-VxX"/>
+                    <constraint firstItem="eKe-7b-79q" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-3" id="ffw-qm-5p7"/>
+                    <constraint firstItem="E7q-iV-8pj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="gPv-u9-ewr"/>
+                    <constraint firstItem="E7q-iV-8pj" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-1.5" id="gnY-kK-lTl"/>
+                    <constraint firstItem="eKe-7b-79q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="liI-nz-8nc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateTimeDescriptionLbl" destination="nPc-Fb-XDq" id="1bS-PP-ewI"/>
+                <outlet property="imgVw" destination="E7q-iV-8pj" id="stj-Ln-dXG"/>
+                <outlet property="titleLbl" destination="eKe-7b-79q" id="USM-PO-uHQ"/>
+            </connections>
+            <point key="canvasLocation" x="251.5" y="311.5"/>
+        </tableViewCell>
+    </objects>
+</document>
